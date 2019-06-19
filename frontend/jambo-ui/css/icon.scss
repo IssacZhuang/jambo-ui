@@ -1,0 +1,72 @@
+$icon-dir:"../icon/";//存放图标的目录，根据部署情况修改
+
+@font-face {font-family: "iconfont";
+    src: url($icon-dir+'iconfont.eot?t=1559335964770'); /* IE9 */
+    src: url($icon-dir+'iconfont.eot?t=1559335964770#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+    url($icon-dir+'iconfont.woff?t=1559335964770') format('woff'),
+    url($icon-dir+'iconfont.ttf?t=1559335964770') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url($icon-dir+'iconfont.svg?t=1559335964770#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .icon {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .jambo-check:before {
+    content: "\e645";
+  }
+  
+  .jambo-close:before {
+    content: "\e646";
+  }
+  
+  .jambo-roundcheck:before {
+    content: "\e657";
+  }
+  
+  .jambo-roundclose:before {
+    content: "\e659";
+  }
+  
+  .jambo-money:before {
+    content: "\e685";
+  }
+  
+  .jambo-alipay:before {
+    content: "\e61f";
+  }
+  
+  .jambo-wechat:before {
+    content: "\e651";
+  }
+  
+  .jambo-menu:before {
+    content: "\e774";
+  }
+  
+  .jambo-navigate-left:before {
+    content: "\e93c";
+  }
+  
+  .jambo-navigate-right:before {
+    content: "\e93e";
+  }
+  
+  .jambo-navigate-up:before {
+    content: "\e93f";
+  }
+  
+  .jambo-navigate-down:before {
+    content: "\e943";
+  }
+  
+  .jambo-search:before {
+    content: "\e946";
+  }
+  
+  

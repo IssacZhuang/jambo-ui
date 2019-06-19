@@ -1,0 +1,99 @@
+$primary-color:#F17059;
+
+h1 {
+  font-size: 46px;
+  line-height: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.link:hover{
+  color:#ED816D !important;
+}
+
+.fs-1 {
+  font-size: 16px;
+}
+
+.fs-2 {
+  font-size: 18px;
+}
+
+.fs-3 {
+  font-size: 22px;
+}
+
+.fs-4 {
+  font-size: 28px;
+}
+
+.fs-5 {
+  font-size: 36px;
+}
+
+.fs-6 {
+  font-size: 46px;
+}
+
+.lh-1 {
+  line-height: 44px;
+}
+
+.lh-2 {
+  line-height: 60px;
+}
+
+.resp-title {
+  font-size: 18px;
+  color:$primary-color;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .resp-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
