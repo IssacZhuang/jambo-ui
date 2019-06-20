@@ -38,12 +38,12 @@ $nav-link-color:#888888;
   overflow: hidden;
   height: 100%;
   flex-basis:100%; 
+  padding: 0px 10px 10px 10px;
   transition: height 0.3s;
 }
 
 .nav-link-container.open{
   display: block;
-  padding: 0px 10px 10px 10px;
   max-height:100%;
 }
 
