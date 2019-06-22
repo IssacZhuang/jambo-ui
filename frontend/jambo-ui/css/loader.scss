@@ -1,3 +1,5 @@
+@import './_config.scss';
+
 @-webkit-keyframes scale {
     0% {
       -webkit-transform: scale(1);
@@ -60,9 +62,13 @@
   }
   
   .loader.primary > div {
-    background-color: #f17059;
+    background-color: $primary-color;
   }
 
-  #loader > div{
-    background-color: blue;
+  .loader.secondary>div{
+    background-color: $secondary-color;
+  }
+
+  .loader.center{
+    text-align: center;
   }

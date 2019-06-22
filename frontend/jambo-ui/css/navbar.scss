@@ -1,5 +1,4 @@
-$primary-color:#F17059;
-$nav-link-color:#888888;
+@import './_config.scss';
 
 .body-with-navbar{
   padding-top:64px;
@@ -52,11 +51,11 @@ $nav-link-color:#888888;
   text-decoration: none;
   color: $nav-link-color;
   display: flex;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: $color-transition;
 }
 
 .nav-link:hover{
-  color:#ED816D !important;
+  color:$primary-hover-color !important;
 }
 
 .nav-link.active{

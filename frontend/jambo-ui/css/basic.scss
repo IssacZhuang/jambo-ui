@@ -1,3 +1,7 @@
+@import './config';
+
+//this file is refer to the normalize.css
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -33,7 +37,7 @@ html {
  */
 
 body {
-  color: #606c76;
+  color: $text-color;
   margin: 0;
 }
 
