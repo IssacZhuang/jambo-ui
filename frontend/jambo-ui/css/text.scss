@@ -1,4 +1,4 @@
-$primary-color:#F17059;
+@import './config';
 
 h1 {
   font-size: 46px;
@@ -43,7 +43,7 @@ h6 {
 }
 
 .link:hover{
-  color:#ED816D !important;
+  color:$primary-hover-color !important;
 }
 
 .fs-1 {
@@ -79,7 +79,7 @@ h6 {
 }
 
 .resp-title {
-  font-size: 18px;
+  font-size: 22px;
   color:$primary-color;
 }
 
@@ -88,7 +88,7 @@ h6 {
 
 @media (min-width: 768px) {
   .resp-title {
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 
