@@ -1,0 +1,60 @@
+.input-container
+,.input-container>label
+,.file-selector{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.input-container{
+    display: grid !important;
+}
+
+.file-selector{
+    display: flex;
+}
+
+.input-container>.feedback{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.875rem;
+    margin-top: 0.25rem !important;
+}
+
+.input-container>input[type='color']{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.input-container>input[type='text']
+,.input-container>input[type='email']
+,.input-container>input[type='password']
+,.input-container>input[type='number']
+,.input-container>input[type='tel']
+,.input-container>input[type='url']
+,.input-container>input[type='datetime']
+,.input-container>textarea
+,.file-selector>label{
+    border: none;
+    outline: none;
+    background-color: #f2f4f5;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem !important;
+    line-height: 1rem !important;
+    color: $text-color;
+}
+
+.file-selector>input[type='file']{
+    display: none;
+}
+
+.file-selector>label{
+    cursor: pointer;
+    transition: $color-transition;
+}
+
+.file-selector>label:hover{
+    background-color: $primary-light-color;
+    color: $primary-color;
+}
