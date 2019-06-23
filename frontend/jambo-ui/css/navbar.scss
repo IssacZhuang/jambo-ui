@@ -1,7 +1,7 @@
 @import './_config.scss';
 
 .body-with-navbar{
-  padding-top:64px;
+  padding-top:4rem;
 }
 
 .navbar {
@@ -13,7 +13,7 @@
 
 .navbar-container {
   width: 100%;
-  min-height: 64px;
+  min-height: 4rem;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
   display: flex;
@@ -21,14 +21,14 @@
 }
 
 .navbar-item{
-    padding: 10px;
+    padding: 0.5rem;
     height: 100%;
 }
 
 .navbar-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: lighter;
-  line-height: 44px;
+  line-height: 3rem;
   color:$primary-color;
 }
 
@@ -36,8 +36,8 @@
   overflow: hidden;
   height: 0;
   flex-basis:100%; 
-  padding: 0px 10px;
-  transition: height 0.3s;
+  padding: 0px 0.5rem;
+  transition: height .15s ease-in-out;
 }
 
 .nav-link-container.open{
@@ -46,8 +46,8 @@
 }
 
 .nav-link{
-  font-size: 18px;
-  line-height: 44px;
+  font-size: 1.125rem;
+  line-height: 3rem;
   text-decoration: none;
   color: $nav-link-color;
   display: flex;
@@ -63,7 +63,7 @@
 }
 
 .nav-divider{
-  margin: 8px 0px;
+  margin: 0.5rem 0px;
   border: 0.5px solid rgba(0,0,0,0.12);
 }
 
@@ -73,23 +73,23 @@
 
 @media (min-width: 768px) {
   .navbar-container {
-    min-height: 80px;
+    min-height: 5rem;
   }
 
   .navbar-title {
-    font-size: 36px;
-    line-height: 60px;
+    font-size: 2.25rem;
+    line-height: 4rem;
   }
 
   .nav-link{
-    line-height: 60px;
+    line-height: 4rem;
     margin-right:1rem; 
   }
 
   .nav-link-container{
     display: flex;
     flex-basis: unset;
-    padding: 10px;
+    padding: 0.5rem;
     height: unset;
   }
 
@@ -103,7 +103,7 @@
   }
 
   .body-with-navbar{
-    padding-top:80px;
+    padding-top:5rem;
   }
 }
 
