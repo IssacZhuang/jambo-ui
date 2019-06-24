@@ -1,0 +1,36 @@
+.serach-bar{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    border-radius: 4px;
+    display: flex;
+    }
+    
+    .serach-bar .icon{
+    font-size: 32px;
+    line-height: 32px;
+    }
+    
+    .icon-container{
+    height: 100%;
+    width: 80px;
+    padding: 24px;
+    }
+    
+    .search-button{
+    height: 100%;
+    padding: 32px 31px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #F17059;
+    background-color: rgba(241, 112, 89, 0.2);
+    }
+    
+    .serach-input{
+    flex-grow: 1;
+    }
+    
+    .serach-bar input{
+    border:none;
+    outline: none !important;
+    }
