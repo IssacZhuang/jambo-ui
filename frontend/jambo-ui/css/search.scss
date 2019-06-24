@@ -1,5 +1,5 @@
 .serach-bar{
-    height: 80px;
+    height: 4rem;
     width: 100%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     border-radius: 4px;
@@ -7,21 +7,21 @@
     }
     
     .serach-bar .icon{
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2rem;
     }
     
     .icon-container{
     height: 100%;
-    width: 80px;
-    padding: 24px;
+    width: 5rem;
+    padding: 1rem;
     }
     
     .search-button{
     height: 100%;
-    padding: 32px 31px;
-    font-size: 18px;
-    line-height: 18px;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     color: #F17059;
     background-color: rgba(241, 112, 89, 0.2);
     }
