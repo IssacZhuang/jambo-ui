@@ -1,11 +1,19 @@
 import './css/index.scss';
+import Axios from 'axios';
 
-var $ = function (arg) {
-    return document.querySelector(arg);
-}
+window.onload = function () {
+    const header = document.body.querySelector('.navbar');
+    console.log(header);
 
-window.onload=function(){
-    $('#menu-button').onclick = function () {
-        $('.nav-link-container').classList.toggle('open');
+    header.querySelector('#menu-button').onclick = function () {
+        header.querySelector('.nav-link-container').classList.toggle('open');
+    };
+    header.querySelector('#sign-in').onclick = function(){
+        header.querySelector('.modal-container').classList.add('open');
+        document.body.classList.add('modal-opened');
+    }
+    header.querySelector('.close-button').onclick = function(){
+        header.querySelector('.modal-container').classList.remove('open');
+        document.body.classList.remove('modal-opened');
     }
 }

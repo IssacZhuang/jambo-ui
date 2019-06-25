@@ -5,8 +5,15 @@
     <link rel="stylesheet" href="../jamboUI/jamboUI.min.css">
     <script src="../jamboUI/jamboUI.min.js"></script>
     <title>拓学jambo</title>
+    <!-- <script>
+        document.querySelector("icon jambo-close close-button").onclick=close();
+        function close(){
 
-    
+        }
+    </script> -->
+    <style>
+        
+    </style>
 </head>
 
 <body class="body-with-navbar">
@@ -27,62 +34,34 @@
                 <a class="nav-link" href="#">周边游</a>
                 <a class="nav-link" href="#">游记</a>
                 <hr class="nav-divider">
-                <a class="nav-link" href="#">登录</a>
-                <a class="nav-link" href="#">注册</a>
+                <a id="sign-in" class="nav-link" href="#">登录</a>
+                <a id="sign-on" class="nav-link" href="#">注册</a>
             </nav>
         </div>
+        <div class="modal-container">
+            <div class="modal">
+                <div class="d-flex">
+                    <div class="flex-grow-1"></div>
+                    <div class="icon jambo-close close-button"></div>
+                </div>
+                <div class="resp-title">登录</div>
+                <div class="input-container">
+                    <input type="text" name="test" placeholder="用户名" id="username">
+                    <div class="feedback"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="" placeholder="密码" id="password">
+                    <div class="feedback"></div>
+                </div>
+                <div id="button">
+                    <div class="btn wide primary">登录</div>
+                </div>
+            </div>
+        </div>
     </header>
-    <!--页头-->
     <div id="main">
         <div class="container my-5">
-            <h1>出境游</h1>
-            <form action="https://travelschool.cn" class="serach-bar mt-3">
-                <div class="icon-container">
-                    <div class="icon jambo-search"></div>
-                </div>
-                <input class="serach-input" name="s" type="text" placeholder="请输入关键字">
-                <input class="search-button" type="submit" value="搜索">
-            </form>
-            <div class="resp-title">国家或地区</div>
-            <div id="button">
-                <div class="mt-3"></div>
-                <div class="btn primary-shadow m-1 px-4">全部</div>
-                <div class="btn default-shadow m-1 px-4">英国</div>
-                <div class="btn default-shadow m-1 px-4">韩国</div>
-                <div class="btn default-shadow m-1 px-4">肯尼亚</div>
-            </div>
-            <div>
-                <div class="wide-card mt-3">
-                    <div class="card-content ">
-                        <div class="wide-card-image"></div>
-                    </div>
-                    <div class="wide-card-content">
-                        <div class="card-title"><a href="#">寒假利物浦2+2体验团</a></div>
-                        <div class="card-description">¥28880</div>
-                        <p class="wide-card-excerpt">sdffsfsd</p>
-                    </div>
-                </div>
-
-                <div class="wide-card mt-3">
-                    <div class="card-content">
-                        <div class="wide-card-image"></div>
-                    </div>
-                    <div class="wide-card-content">
-                        <div class="card-title"><a href="#">韩国雅思团</a></div>
-                        <div class="card-description">¥9999</div>
-                        <p class="wide-card-excerpt">sdfghj</p>
-                    </div>
-                </div>
-            </div>
-            <div id="button">
-                <div class="mt-3"></div>
-                <div class="btn default-shadow icon jambo-navigate-left mx-1"></div>
-                <div class="btn default-shadow mx-1">1</div>
-                <div class="btn primary-shadow mx-1">2</div>
-                <div class="btn default-shadow mx-1">3</div>
-                <div class="btn default-shadow icon jambo-navigate-right mx-1"></div>
-
-            </div>
+            <div style="height: 1000px"></div>
         </div>
     </div>
     <!--页脚-->
