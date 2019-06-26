@@ -1,4 +1,4 @@
-.modal-container {
+.modal {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -11,13 +11,13 @@
     cursor: not-allowed;
 }
 
-.modal-container.open {
+.modal.open {
     opacity: 1;
     pointer-events: inherit;
     cursor: inherit;
 }
 
-.modal {
+.modal-container {
     background-color: white;
     z-index: 101;
     width:100%;
@@ -30,7 +30,7 @@
     margin-top: 100vh
 }
 
-.modal-container.open>.modal{
+.modal.open>.modal-container {
     margin-top:0;
 }
 
@@ -45,13 +45,13 @@
     overflow: hidden;
 }
 @media (min-width: 768px) {
-    .modal {
+    .modal-container {
       transition: none;
       width: 25rem;
       height:25rem;
     }
 
-    .modal-container.open>.modal{
+    .modal.open>.modal-container{
         margin-top: calc(50vh - 200px);
     }
 }

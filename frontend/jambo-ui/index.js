@@ -1,6 +1,7 @@
 import './css/index.scss';
+import './js/UI';
 
-window.onload = function () {
+/*window.onload = function () {
     const header = document.body.querySelector('.navbar');
     const modal =document.body.querySelector('.modal');
 
@@ -38,5 +39,5 @@ window.onload = function () {
         let isUsernameValid = feedback(modal.querySelector('#username'));
         let isPasswordValid = feedback(modal.querySelector('#password'));
     }
-}
+}*/
 
