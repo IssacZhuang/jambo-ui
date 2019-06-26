@@ -28,23 +28,24 @@
                 <a class="nav-link" href="#">周边游</a>
                 <a class="nav-link" href="#">游记</a>
                 <hr class="nav-divider">
-                <a id="sign-in" class="nav-link" href="#">登录</a>
+                <a id="sign-in" class="nav-link" href="#" modal="login-window">登录</a>
                 <a id="sign-on" class="nav-link" href="#">注册</a>
             </nav>
         </div>
-        <div class="modal-container">
-            <div class="modal">
+        <!--弹窗-->
+        <div id="login-window" class="modal">
+            <div class="modal-container">
                 <div class="d-flex">
                     <div class="flex-grow-1"></div>
                     <div class="icon jambo-close close-button"></div>
                 </div>
                 <div class="resp-title">登录</div>
-                <div class="input-container">
-                    <input type="text" name="test" placeholder="用户名" id="username">
+                <div class="input">
+                    <input type="text" name="username" placeholder="用户名" id="username">
                     <div class="feedback"></div>
                 </div>
-                <div class="input-container">
-                    <input type="password" name="" placeholder="密码" id="password">
+                <div class="input">
+                    <input type="password" name="password" placeholder="密码" id="password">
                     <div class="feedback"></div>
                 </div>
                 <div class="btn wide primary">登录</div>
@@ -56,7 +57,9 @@
                 </div>
             </div>
         </div>
+        <!--/弹窗-->
     </header>
+    <!--/页头-->
     <div id="main">
         <div class="container my-5">
             <div style="height: 1000px"></div>
@@ -91,7 +94,7 @@
             </div>
         </div>
     </footer>
-    <!--页脚-->
+    <!--/页脚-->
 </body>
 
 </html>

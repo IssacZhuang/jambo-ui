@@ -32,6 +32,11 @@
   color:$primary-color;
 }
 
+.navbar .menu-button{
+  line-height: 2.75rem;
+  font-size: 1.75rem;
+}
+
 .nav-link-container{
   overflow: hidden;
   height: 0;
@@ -104,6 +109,10 @@
 
   .body-with-navbar{
     padding-top:5rem;
+  }
+
+  .menu-button{
+    display: none;
   }
 }
 

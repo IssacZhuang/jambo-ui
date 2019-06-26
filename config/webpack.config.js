@@ -9,10 +9,12 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
     entry: {
         jamboUI: './frontend/jambo-ui/index.js',
+        Controller: './frontend/jambo-ui/controller.js',
     },
     output: {
         path: path.resolve(__dirname, '../public/'),
-        filename: '[name]/[name].min.js'
+        filename: '[name]/[name].min.js',
+        chunkFilename:'js/[chunkhash:8].chunk.js'
     },
     resolve: {
         extensions: ['.js', '.vue'],

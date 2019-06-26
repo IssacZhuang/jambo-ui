@@ -1,11 +1,11 @@
-.input-container
-,.input-container>label
+.input
+,.input>label
 ,.file-selector{
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
 }
 
-.input-container{
+.input{
     display: grid !important;
 }
 
@@ -13,35 +13,35 @@
     display: flex;
 }
 
-.input-container>.feedback{
+.input>.feedback{
     height: 1rem;
     line-height: 1rem;
     font-size: 0.875rem;
     margin-top: 0.25rem !important;
 }
 
-.input-container>.feedback.success{
+.input>.feedback.success{
     color: #52C41A;
 }
 
-.input-container>.feedback.error{
+.input>.feedback.error{
     color: #F5222D;
 }
 
-.input-container>input[type='color']{
+.input>input[type='color']{
     border: none;
     outline: none;
     background-color: white;
 }
 
-.input-container>input[type='text']
-,.input-container>input[type='email']
-,.input-container>input[type='password']
-,.input-container>input[type='number']
-,.input-container>input[type='tel']
-,.input-container>input[type='url']
-,.input-container>input[type='datetime']
-,.input-container>textarea
+.input>input[type='text']
+,.input>input[type='email']
+,.input>input[type='password']
+,.input>input[type='number']
+,.input>input[type='tel']
+,.input>input[type='url']
+,.input>input[type='datetime']
+,.input>textarea
 ,.file-selector>label{
     border: none;
     outline: none;
