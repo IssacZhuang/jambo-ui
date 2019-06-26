@@ -20,6 +20,14 @@
     margin-top: 0.25rem !important;
 }
 
+.input-container>.feedback.success{
+    color: #52C41A;
+}
+
+.input-container>.feedback.error{
+    color: #F5222D;
+}
+
 .input-container>input[type='color']{
     border: none;
     outline: none;
