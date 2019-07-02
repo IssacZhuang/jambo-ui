@@ -1,38 +1,55 @@
 import Navbar from './component/Navbar';
-import {Modal,modalBindTrigger} from './component/Modal';
-import {View,viewBindTrigger} from './component/View';
+import { Modal, modalBindTrigger } from './component/Modal';
+import { View, viewBindTrigger } from './component/View';
 
-window.onload=function(){
-    const Navbars=document.body.querySelectorAll('.navbar');
-    const ModalTriggers=document.body.querySelectorAll('[modal]');
-    const ViewTriggers=document.body.querySelectorAll('[view]');
+window.onload = function () {
+    const Navbars = document.body.querySelectorAll('.navbar');
 
-    Navbars.forEach((item)=>{
+    const ModalNodes=document.body.querySelectorAll('.modal');
+    const Modals =[];
+    const ModalTriggers = document.body.querySelectorAll('[modal]');
+
+    const ViewNodes =document.body.querySelectorAll('.view');
+    const Views = [];
+    const ViewTriggers = document.body.querySelectorAll('[view]');
+
+    //Navbr
+
+    Navbars.forEach((item) => {
         Navbar(item);
     });
 
-    ModalTriggers.forEach((item)=>{
-        let target = item.getAttribute('modal');
-        let modalNode = document.body.querySelector(`#${target}`);
-        let modal = Modal(modalNode);
+    //Modal
 
-        if(modal){
-            modalBindTrigger(modal,item);
-        }
+    ModalNodes.forEach(node => {
+        Modals.push(Modal(node))
     });
 
-    ViewTriggers.forEach(item => {
-        let target = item.getAttribute('view');
-        let key=item.getAttribute('view-key');
-        let viewNode = document.body.querySelector(`#${target}`);
-
-        console.log(item);
-        let view=View(viewNode);
-
+    ModalTriggers.forEach(trigger => {
+        let target = trigger.getAttribute('modal');
         
+        Modals.forEach(modal => {
 
-        if(key&&view){
-            viewBindTrigger(view,item,key)
-        }
+            if(target==modal.id){
+                modalBindTrigger(modal, trigger);
+            }
+        });
+    });
+
+    //View
+
+    ViewNodes.forEach(node => {
+        Views.push(View(node));
+    });
+
+    ViewTriggers.forEach(trigger => {
+        let target = trigger.getAttribute('view');
+        let key = trigger.getAttribute('view-key');
+
+        Views.forEach(view => {
+            if (key&&target==view.id) {
+                viewBindTrigger(view, trigger, key)
+            }
+        });
     });
 }

@@ -1,6 +1,7 @@
 class ModalObject{
     constructor(node){
         this.node=node;
+        this.id=node.getAttribute('id');
         if(!node){
             return;
         }

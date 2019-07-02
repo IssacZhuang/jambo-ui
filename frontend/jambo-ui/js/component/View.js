@@ -2,6 +2,7 @@ class ViewObject{
     constructor(node){
         this.default=node.getAttribute('default');
         this.contents=node.querySelectorAll('.view-content');
+        this.id=node.getAttribute('id');
         
         if(this.default){
             this.open(this.default)
