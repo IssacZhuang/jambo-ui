@@ -29,7 +29,7 @@ function Modal(node){
     return new ModalObject(node);
 }
 
-function bindTrigger(modal,trigger){
+function modalBindTrigger(modal,trigger){
     if(!modal||!trigger){
         return;
     }
@@ -39,4 +39,4 @@ function bindTrigger(modal,trigger){
     }
 }
 
-export {Modal,bindTrigger};
+export {Modal,modalBindTrigger};
