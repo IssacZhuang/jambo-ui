@@ -65,3 +65,21 @@
     background-color: $primary-light-color;
     color: $primary-color;
 }
+
+.input-group{
+    display: flex !important;
+}
+
+.input-group>*{
+    border-radius: 0 !important;
+}
+
+.input-group *:first-child{
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.input-group *:last-child{
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}

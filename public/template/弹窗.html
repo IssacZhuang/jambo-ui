@@ -28,8 +28,8 @@
                 <a class="nav-link" href="#">周边游</a>
                 <a class="nav-link" href="#">游记</a>
                 <hr class="nav-divider">
-                <a id="sign-in" class="nav-link" href="#" modal="login-window">登录</a>
-                <a id="sign-on" class="nav-link" href="#">注册</a>
+                <a id="sign-in" class="nav-link" href="#" modal="login-window" view="sign" view-key="sign-in">登录</a>
+                <a id="sign-on" class="nav-link" href="#" modal="login-window" view="sign" view-key="sign-on">注册</a>
             </nav>
         </div>
         <!--弹窗-->
@@ -39,25 +39,61 @@
                     <div class="flex-grow-1"></div>
                     <div class="icon jambo-close close-button"></div>
                 </div>
-                <div class="resp-title">登录</div>
-                <div class="input">
-                    <input type="text" name="username" placeholder="用户名" id="username">
-                    <div class="feedback"></div>
-                </div>
-                <div class="input">
-                    <input type="password" name="password" placeholder="密码" id="password">
-                    <div class="feedback"></div>
-                </div>
-                <div class="btn wide primary">登录</div>
-                <div class="py-3 d-flex">
-                    <div class="color-wechat icon jambo-wechat fs-5">
+                <div id="sign" class="view" default="sign-in">
+                    <div class="view-content" key="sign-in">
+                        <div class="resp-title">登录</div>
+                        <div class="input">
+                            <input type="text" name="username" placeholder="用户名" id="username">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="password" placeholder="密码" id="password">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="btn wide primary">登录</div>
+                        <a class="link d-block mt-2" href="javascript:;" view="sign" view-key="sign-in-phone">手机验证码登录</a>
+                        <a class="link d-block mt-2" href="javascript:;" view="sign" view-key="sign-on">还没有账号,去注册</a>
                     </div>
-                    <div class="icon jambo-phone ml-3 fs-5">
+                    <div class="view-content" key="sign-on">
+                        <div class="resp-title">注册</div>
+                        <div class="input">
+                            <input type="text" name="username" placeholder="手机号" id="username">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="input">
+                            <div class="input-group">
+                                <input class="flex-grow-1" type="text" name="username" placeholder="验证码" id="username">
+                                <div class="btn primary lh-4">获取验证码</div>
+                            </div>
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="password" placeholder="密码" id="password">
+                            <div class="feedback"></div>
+                        </div>
+                        <div class="btn wide primary">注册</div>
+                        <a class="link d-block mt-2" href="javascript:;" view="sign" view-key="sign-in">已有账号,去登录</a>
                     </div>
+
+                    <div class="view-content" key="sign-in-phone">
+                            <div class="resp-title">手机验证码登录</div>
+                            <div class="input">
+                                <input type="text" name="username" placeholder="手机号" id="username">
+                                <div class="feedback"></div>
+                            </div>
+                            <div class="input">
+                                <div class="input-group">
+                                    <input class="flex-grow-1" type="text" name="username" placeholder="验证码" id="username">
+                                    <div class="btn primary lh-4">获取验证码</div>
+                                </div>
+                                <div class="feedback"></div>
+                            </div>
+                            <div class="btn wide primary">登录</div>
+                            <a class="link d-block mt-2" href="javascript:;" view="sign" view-key="sign-in">已有账号,去登录</a>
+                        </div>
                 </div>
             </div>
-        </div>
-        <!--/弹窗-->
+            <!--/弹窗-->
     </header>
     <!--/页头-->
     <div id="main">
