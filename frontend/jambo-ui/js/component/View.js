@@ -33,9 +33,9 @@ function viewBindTrigger(view,trigger,key){
         return;
     }
 
-    trigger.onclick=()=>{
+    trigger.addEventListener('click',()=>{
         view.open(key);
-    }
+    })
 }
 
 export {View,viewBindTrigger};

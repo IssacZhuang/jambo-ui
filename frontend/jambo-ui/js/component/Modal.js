@@ -35,9 +35,9 @@ function modalBindTrigger(modal,trigger){
         return;
     }
 
-    trigger.onclick=()=>{
+    trigger.addEventListener('click',()=>{
         modal.open();
-    }
+    })
 }
 
 export {Modal,modalBindTrigger};
