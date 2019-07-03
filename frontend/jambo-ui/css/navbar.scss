@@ -1,0 +1,125 @@
+@import './_config.scss';
+
+.body-with-navbar{
+  padding-top:4rem;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  width: 100%;
+  min-height: 4rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-item{
+    padding: 0.5rem;
+    height: 100%;
+}
+
+.navbar-title {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  line-height: 3rem;
+  color:$primary-color;
+}
+
+.navbar .menu-button{
+  line-height: 2.75rem;
+  font-size: 1.75rem;
+}
+
+.nav-link-container{
+  overflow: hidden;
+  height: 0;
+  flex-basis:100%; 
+  padding: 0px 0.5rem;
+  transition: height .15s ease-in-out;
+}
+
+.nav-link-container.open{
+  display: block;
+  height: 100vh;
+}
+
+.nav-link{
+  font-size: 1.125rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: $nav-link-color;
+  display: flex;
+  transition: $color-transition;
+}
+
+.nav-link:hover{
+  color:$primary-hover-color !important;
+}
+
+.nav-link.active{
+  color: $primary-color;
+}
+
+.nav-divider{
+  margin: 0.5rem 0px;
+  border: 0.5px solid rgba(0,0,0,0.12);
+}
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    min-height: 5rem;
+  }
+
+  .navbar-title {
+    font-size: 2.25rem;
+    line-height: 4rem;
+  }
+
+  .nav-link{
+    line-height: 4rem;
+    margin-right:1rem; 
+  }
+
+  .nav-link-container{
+    display: flex;
+    flex-basis: unset;
+    padding: 0.5rem;
+    height: unset;
+  }
+
+  .nav-link-container.open{
+    display: flex;
+    height: unset;
+  }
+
+  .nav-divider{
+    display: none;
+  }
+
+  .body-with-navbar{
+    padding-top:5rem;
+  }
+
+  .menu-button{
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

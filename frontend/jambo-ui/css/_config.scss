@@ -1,0 +1,30 @@
+//the font color
+$text-color:#606c76;
+
+//the color of navigation links
+$nav-link-color:#888888;
+
+//primary color
+$primary-color:#F17059;
+//the primary color when hover
+$primary-hover-color:#ED816D;
+//the primary shadow color
+$primary-shadow-color:rgba(241,112,89,0.81);
+//the primary light color
+$primary-light-color:rgba(241, 112, 89, 0.2);
+
+//secondary color
+$secondary-color:#15C39A;
+//the secondary color when hover
+$secondary-hover-color:#48BFA3;
+//the secondary shadow color
+$secondary-shadow-color:rgba(21,195,154,0.81);
+//the primary light color
+$secondary-light-color:rgba(21,195,154,0.2);
+
+
+$color-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+.color-wechat{
+    color: #44b549;
+}
