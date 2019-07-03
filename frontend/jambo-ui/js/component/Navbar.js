@@ -10,8 +10,8 @@ function Navbar(node) {
         return;
     }
 
-    menuButton.onclick=()=>{
+    menuButton.addEventListener('click',()=>{
         navLinkContainer.classList.toggle('open');
-    }
+    })
 }
 export default Navbar;

@@ -48,7 +48,7 @@
     .modal-container {
       transition: none;
       width: 25rem;
-      height:25rem;
+      height:fit-content;
     }
 
     .modal.open>.modal-container{
