@@ -2,7 +2,6 @@
 ,.input>label
 ,.file-selector{
     margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
 }
 
 .input{
@@ -13,35 +12,35 @@
     display: flex;
 }
 
-.input>.feedback{
-    height: 1rem;
-    line-height: 1rem;
+.input .feedback{
+    height: 0.875rem;
+    line-height: 0.875rem;
     font-size: 0.875rem;
     margin-top: 0.25rem !important;
 }
 
-.input>.feedback.success{
+.input .feedback.success{
     color: #52C41A;
 }
 
-.input>.feedback.error{
+.input .feedback.error{
     color: #F5222D;
 }
 
-.input>input[type='color']{
+.input input[type='color']{
     border: none;
     outline: none;
     background-color: white;
 }
 
-.input>input[type='text']
-,.input>input[type='email']
-,.input>input[type='password']
-,.input>input[type='number']
-,.input>input[type='tel']
-,.input>input[type='url']
-,.input>input[type='datetime']
-,.input>textarea
+.input input[type='text']
+,.input input[type='email']
+,.input input[type='password']
+,.input input[type='number']
+,.input input[type='tel']
+,.input input[type='url']
+,.input input[type='datetime']
+,.input textarea
 ,.file-selector>label{
     border: none;
     outline: none;
@@ -53,7 +52,7 @@
     color: $text-color;
 }
 
-.file-selector>input[type='file']{
+.file-selector input[type='file']{
     display: none;
 }
 
