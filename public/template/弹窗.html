@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../jamboUI/jamboUI.min.css">
     <script src="../jamboUI/jamboUI.min.js"></script>
+    <script src="../Controller/Controller.min.js"></script>
+    <meta name="auth" content="c54afc7f7d">
     <title>拓学jambo</title>
     <style>
 
@@ -57,18 +59,18 @@
                     <div class="view-content" key="sign-on">
                         <div class="resp-title">注册</div>
                         <div class="input">
-                            <input type="text" name="username" placeholder="手机号" id="username">
+                            <input type="text" name="username" placeholder="手机号" id="phone">
                             <div class="feedback"></div>
                         </div>
                         <div class="input">
                             <div class="input-group">
-                                <input class="flex-grow-1" type="text" name="username" placeholder="验证码" id="username">
+                                <input class="flex-grow-1" type="text" name="username" placeholder="验证码">
                                 <div class="btn primary lh-4">获取验证码</div>
                             </div>
                             <div class="feedback"></div>
                         </div>
                         <div class="input">
-                            <input type="password" name="password" placeholder="密码" id="password">
+                            <input type="password" name="password" placeholder="密码">
                             <div class="feedback"></div>
                         </div>
                         <div class="btn wide primary">注册</div>
@@ -78,12 +80,12 @@
                     <div class="view-content" key="sign-in-phone">
                             <div class="resp-title">手机验证码登录</div>
                             <div class="input">
-                                <input type="text" name="username" placeholder="手机号" id="username">
+                                <input type="text" name="username" placeholder="手机号" id="phone">
                                 <div class="feedback"></div>
                             </div>
                             <div class="input">
                                 <div class="input-group">
-                                    <input class="flex-grow-1" type="text" name="username" placeholder="验证码" id="username">
+                                    <input class="flex-grow-1" type="text" name="username" placeholder="验证码">
                                     <div class="btn primary lh-4">获取验证码</div>
                                 </div>
                                 <div class="feedback"></div>

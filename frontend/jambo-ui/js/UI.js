@@ -2,7 +2,7 @@ import Navbar from './component/Navbar';
 import { Modal, modalBindTrigger } from './component/Modal';
 import { View, viewBindTrigger } from './component/View';
 
-window.onload = function () {
+window.addEventListener('load', () => {
     const Navbars = document.body.querySelectorAll('.navbar');
 
     const ModalNodes=document.body.querySelectorAll('.modal');
@@ -52,4 +52,4 @@ window.onload = function () {
             }
         });
     });
-}
+});
