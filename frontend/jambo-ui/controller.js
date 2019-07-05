@@ -2,7 +2,6 @@ import Input from './js/component/Input'
 import Axios from 'axios'
 
 window.addEventListener('load', () => {
-    let csrfField = document.head.querySelector('meta[name="csrf"]');
     let authFeild = document.head.querySelector('meta[name="auth"]');
 
     let auth = authFeild ? authFeild.getAttribute('content') : null;
