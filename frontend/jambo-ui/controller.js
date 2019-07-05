@@ -45,17 +45,32 @@ window.addEventListener('load', () => {
 
     submitButton.onclick = () => {
 
+        let sendRequest=true;
+
+        if (username.empty()) {
+            username.error('用户名不能为空');
+            sendRequest=false;
+        }
+
+        if (password.empty()) {
+            password.error('密码不能为空');
+            sendRequest=false;
+        }
+
+        if(!sendRequest){
+            return;
+        }
+
         Axios.post('http://develop.travelschool.cn/wp-json/jambo/v2/login', {
             username: username.get(),
             password: password.get()
         })
             .then((response) => {
-
+                window.location.reload();
             })
-            .catch((response) => {
-
+            .catch((error) => {
+                console.log(error);
             });
-        console.log('sended');
     }
 });
 
