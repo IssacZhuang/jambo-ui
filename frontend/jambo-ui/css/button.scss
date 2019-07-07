@@ -1,6 +1,8 @@
 @import './_config.scss';
+@import './pressable';
 
 .btn{
+    @include pressable;
     display: inline-block;
     font-weight: 400;
     text-align: center;
