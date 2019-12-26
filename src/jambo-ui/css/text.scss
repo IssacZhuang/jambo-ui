@@ -1,0 +1,121 @@
+@import './config';
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.875rem;
+  line-height: 3.75rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.link{
+  color: inherit;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.link:hover{
+  color:$primary-hover-color !important;
+}
+
+.fs-1 {
+  font-size: 1rem !important;
+}
+
+.fs-2 {
+  font-size: 1.125rem !important;
+}
+
+.fs-3 {
+  font-size: 1.375rem !important;
+}
+
+.fs-4 {
+  font-size: 1.75rem !important;
+}
+
+.fs-5 {
+  font-size: 2.25rem !important;
+}
+
+.fs-6 {
+  font-size: 2.875rem !important;
+}
+
+.lh-1 {
+  line-height: 1.25rem !important;
+}
+
+.lh-2 {
+  line-height: 1.5rem !important;
+}
+
+.lh-3 {
+  line-height: 1.75rem !important;
+}
+
+.lh-4 {
+  line-height: 2.375rem !important;
+}
+
+.lh-5 {
+  line-height: 2.875rem !important;
+}
+
+.lh-6 {
+  line-height: 3.75rem !important;
+}
+
+.resp-title {
+  font-size: 1.375rem;
+  color:$primary-color;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 760.5rem) {
+  .resp-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

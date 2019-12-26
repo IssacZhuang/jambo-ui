@@ -1,0 +1,89 @@
+.input
+,.file-selector{
+    margin-top: 0.5rem !important;
+}
+
+.input>label{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.input{
+    display: grid !important;
+}
+
+.file-selector{
+    display: flex;
+}
+
+.input .feedback{
+    height: 0.875rem;
+    line-height: 0.875rem;
+    font-size: 0.875rem;
+    margin-top: 0.25rem !important;
+}
+
+.input .feedback.success{
+    color: #52C41A;
+}
+
+.input .feedback.error{
+    color: #F5222D;
+}
+
+.input input[type='color']{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.input input[type='text']
+,.input input[type='email']
+,.input input[type='password']
+,.input input[type='number']
+,.input input[type='tel']
+,.input input[type='url']
+,.input input[type='datetime']
+,.input textarea
+,.file-selector>label{
+    border: none;
+    outline: none;
+    background-color: #f2f4f5;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem !important;
+    line-height: 1rem !important;
+    color: $text-color;
+}
+
+.file-selector input[type='file']{
+    display: none;
+}
+
+.file-selector>label{
+    cursor: pointer;
+    transition: $color-transition;
+}
+
+.file-selector>label:hover{
+    background-color: $primary-light-color;
+    color: $primary-color;
+}
+
+.input-group{
+    display: flex !important;
+}
+
+.input-group>*{
+    border-radius: 0 !important;
+}
+
+.input-group *:first-child{
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.input-group *:last-child{
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
